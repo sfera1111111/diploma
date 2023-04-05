@@ -1,18 +1,20 @@
 import { Link, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
     <div className="App">
 
-
+          
 
        <Layout>
+      
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/contects" element={<h1>Homes</h1>} />
-          <Route path="/delive" element={<h1>Delive</h1>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/deliver" element={<Deliver />} />
         </Routes>
        </Layout>
 

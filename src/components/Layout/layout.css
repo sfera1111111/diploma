@@ -1,0 +1,25 @@
+.layout {
+  display:grid;
+  grid-template-areas: "header header"
+  "aside main"
+  "footer footer";
+  grid-template-columns: 1fr 3fr;
+
+  max-width: 789px;
+  margin: 0 auto;
+}
+.layout header {
+  grid-area: header;
+}
+.layout aside {
+  grid-area: aside;
+}
+.layout main {
+  grid-area: main;
+}
+.layout footer {
+  grid-area: footer;
+}
+.layout .pholodilnik {
+  max-width: 100px;
+}
