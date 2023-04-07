@@ -1,4 +1,10 @@
 .Nav .NavItem a {
-color: rgb(159, 146, 170);
+color: rgb(28, 68, 120);
 }
-
+.dsp {
+  display: flex;
+ }
+li {
+  padding-left: 10px;
+  list-style-type: none;
+}

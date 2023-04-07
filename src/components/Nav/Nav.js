@@ -4,7 +4,7 @@ import "./Nav.css";
 export default function Nav() {
   return (
     <nav className="Nav">
-      <ul>
+      <ul className="dsp">
         <li className="NavItem"> 
           <NavLink to="/">Nome</NavLink>
         </li>
