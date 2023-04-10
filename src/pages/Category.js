@@ -9,8 +9,6 @@ const params = useMatch("/categories/:slug");
     {id: 4, name: "Fruity", slug: "fruity"}
   ];
   
-  
-
   return (
     <div className="Category">
       <h1>{params.slug}</h1>

@@ -27,3 +27,6 @@ header {
   background-color: rgb(87, 205, 205);
   display: flex;
 }
+aside {
+  background-color: rgba(216, 216, 216, 0.592);
+}
