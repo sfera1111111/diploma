@@ -3,6 +3,7 @@ import { categories } from "../../firebase";
 import "./CategoryList.css"
 import { getDocs } from "firebase/firestore/lite";
 import { NavLink } from "react-router-dom";
+
 export default function CategoryList() {
 
   const [categoryList, setCategoryList] = useState([]);
@@ -30,7 +31,7 @@ export default function CategoryList() {
   
   const output = categoryList.map((category) => (
    <li key={category.id}>
-     <NavLink to={"/catgories/" + category.slug}>
+     <NavLink to={'/catgories/${category.slug}'}>
        {category.name}
      </NavLink>
    </li>));

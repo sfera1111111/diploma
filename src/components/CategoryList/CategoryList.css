@@ -5,3 +5,7 @@
   padding: 0;
   text-align: center;
 }
+.p li a {
+  padding-left: 15px;
+  padding-right: 15px;
+}

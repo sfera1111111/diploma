@@ -24,7 +24,7 @@
   max-width: 100px;
 }
 header {
-  background-color: rgb(87, 205, 205);
+  background-color: rgba(98, 200, 200, 0.599);
   display: flex;
 }
 aside {
