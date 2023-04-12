@@ -3,10 +3,12 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home"
 import Caregory from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { createContext, useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import { categoryCollection } from "./firebase";
+import { getDocs } from "firebase/firestore/lite";
 
-export const AppContent = createContext({
+
+export const AppContext = createContext({
   categories: [],
 });
 
@@ -28,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <AppContext.Provider value={{ categories }}>
       <Layout>
         <Routes>
           <Route path="/" element={<h2>Home</h2>} />
@@ -38,6 +41,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
        </Layout>
+      </AppContext.Provider>
     </div>
   )
 }
