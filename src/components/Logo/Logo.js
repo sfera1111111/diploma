@@ -1,5 +1,6 @@
 import "./Logo.css";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.jpg"
+
 
 export default function Logo() {
   return (
