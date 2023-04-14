@@ -53,6 +53,9 @@ function App() {
           <Route path="/categories/:slug" element={<Caregory />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+          
+
        </Layout>
       </AppContext.Provider>
     </div>
