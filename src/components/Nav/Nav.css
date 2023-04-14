@@ -4,7 +4,13 @@ color: rgb(28, 68, 120);
 .dsp {
   display: flex;
  }
-li {
+.Nav .dsp li {
   padding-left: 10px;
   list-style-type: none;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
