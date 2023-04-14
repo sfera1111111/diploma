@@ -3,21 +3,22 @@ import "./Nav.css";
 
 export default function Nav() {
   return (
-    <nav className="Nav">
-      <ul className="dsp">
-        <li className="NavItem"> 
-          <NavLink to="/">Nome</NavLink>
-        </li>
-        <li className="NavItem">
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li className="NavItem">
-          <NavLink to="/contacts">Contects</NavLink>
-        </li>
-        <li className="NavItem">
-          <NavLink to="/deliver">Delive</NavLink>
-        </li>
-      </ul>
-    </nav>
+          <nav className="Nav">
+          <ul className="dsp">
+          <li className="NavItem"> 
+            <NavLink className="menu__item" to="/">Nome</NavLink>
+          </li>
+          <li className="NavItem">
+            <NavLink className="menu__item" to="/about">About</NavLink>
+          </li>
+          <li className="NavItem">
+            <NavLink className="menu__item" to="/contacts">Contects</NavLink>
+          </li>
+          <li className="NavItem">
+            <NavLink className="menu__item" to="/deliver">Delive</NavLink>
+          </li>
+        </ul>
+          </nav>
+
   );
 }

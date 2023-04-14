@@ -24,10 +24,11 @@
   max-width: 100px;
 }
 header {
-  background-color: rgba(98, 200, 200, 0.599);
+  background-color: rgba(255, 255, 255, 0.599);
   display: flex;
   max-width: 100%;
 }
 aside {
-  background-color: rgba(216, 216, 216, 0.592);
+  background-color: rgba(255, 255, 255, 0.592);
+  height:  380px;
 }

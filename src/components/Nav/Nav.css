@@ -8,9 +8,13 @@ color: rgb(28, 68, 120);
   padding-left: 10px;
   list-style-type: none;
 }
+ a {
+  text-decoration: none;
+} 
 li {
   list-style-type: none;
 }
-a {
-  text-decoration: none;
+.menu__item {
+  font-size: 20px;
+  padding: 10px;
 }
