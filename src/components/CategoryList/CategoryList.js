@@ -15,7 +15,9 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <h3>CategoryList</h3>
-      <ul className="p">{output}</ul>
+      <ul className="p">
+        {output}
+      </ul>
     </div>
   );
 }
