@@ -16,13 +16,6 @@ export default function CartList() {
     delete newCart[product.id];
     setCart(newCart);
   }
-
-
-
-
-
-
-
   const productIds = Object.keys(cart);
 
   const output = products
@@ -40,7 +33,7 @@ export default function CartList() {
         (product, +event.target.value)}
         />
 
-        <span>{cart[product.id] * product.price} som</span>
+        <span>{cart[product.id] + product.price} som</span>
         <button onClick={() => onItemRemove(product)}>Remove</button>
       </div>
     ));
