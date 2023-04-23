@@ -3,6 +3,7 @@ import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
+import Auth from "../Auth/Auth";
 
 
 export default function Layout(props) {
@@ -12,6 +13,7 @@ export default function Layout(props) {
         <Logo />
         <Nav />
         <CartLink />
+        <Auth />
        </header>
        <aside>
         <CategoryList />      
