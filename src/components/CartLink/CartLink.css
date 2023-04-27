@@ -1,7 +1,11 @@
 .CartLink {
   padding: 20px 0 0 0;
-  margin-left: 500px;
+  margin-left: 400px;
 }
 .CartLink .cart {
   text-align: center;
+  display: flex;
+}
+.CartLink .cart .basket {
+  max-width: 50px;
 }

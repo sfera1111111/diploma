@@ -2,7 +2,6 @@ import { useContext } from "react";
 import "./CartLink.css";
 import { AppContext } from "../../App";
 import { NavLink } from "react-router-dom";
-import CartList from "../CartList/CartList";
 
 export default function CartLink() {
   const { cart } = useContext(AppContext);
@@ -14,7 +13,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart" className="cart">
-        Cart ({total})
+        <img src="https://cdn-icons-png.flaticon.com/512/70/70669.png" alt="???" className="basket" /> ({total})
       </NavLink>
     </div>
   );
