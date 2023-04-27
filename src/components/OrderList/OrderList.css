@@ -1,7 +1,10 @@
 .OrderList .Order {
-  border-bottom: 1px solid black;
-  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 10px 10px 0px 0;
+  text-align: center;
+  border-radius: 14px;
+  margin: 20px 20px 0 0;
 }
-.OrderList .Order img {
-  max-width: 40px;
-}
+/* .OrderList .Order img {
+  max-width: 50px;
+} */

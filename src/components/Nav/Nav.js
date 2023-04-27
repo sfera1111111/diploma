@@ -3,8 +3,8 @@ import "./Nav.css";
 
 export default function Nav() {
   return (
-          <nav className="Nav">
-          <ul className="dsp">
+      <nav className="Nav">
+        <ul className="dsp">
           <li className="NavItem"> 
             <NavLink className="menu__item" to="/">Nome</NavLink>
           </li>
@@ -15,10 +15,9 @@ export default function Nav() {
             <NavLink className="menu__item" to="/contacts">Contects</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink className="menu__item" to="/deliver">Delive</NavLink>
+            <NavLink className="menu__item" to="/delivery">Delivery</NavLink>
           </li>
         </ul>
-          </nav>
-
+       </nav>
   );
 }
