@@ -4,7 +4,6 @@
   "aside main"
   "footer footer";
   grid-template-columns: 1fr 3fr;
-
   max-width: 789px;
   margin: 0 auto;
 }
@@ -24,12 +23,11 @@
   max-width: 100px;
 }
 header {
-  display: flex;
-  max-width: 100%;
-}
-aside {
-  height:  380px;
+  max-width: 250px;
 }
 p {
   text-align: center;
+}
+.diplay {
+  display: flex;
 }
