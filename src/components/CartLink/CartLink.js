@@ -13,7 +13,7 @@ export default function CartLink() {
   return (
     <div className="CartLink">
       <NavLink to="/cart" className="cart">
-        <img src="https://cdn-icons-png.flaticon.com/512/70/70669.png" alt="???" className="basket" /> ({total})
+        <img src="https://cdn-icons-png.flaticon.com/512/70/70669.png" alt="cart Link" className="basket" /> ({total})
       </NavLink>
     </div>
   );
