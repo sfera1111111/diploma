@@ -5,7 +5,6 @@ import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
 import {
-  categoryCollection,
   onAuthChange,
   onCategoriesLoad,
   onOrdersLoad,
@@ -16,15 +15,13 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 
-// Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
 
-  // контекст для корзины
-  cart: {}, // содержимое корзинки
-  setCart: () => {}, // изменить содержимое корзики
+  cart: {}, 
+  setCart: () => {},
 
   user: null,
 });
@@ -53,11 +50,9 @@ function App() {
       if (user) {
         user.isAdmin = user.email === "samarbekjymakadurov@gmail.com";
       }
-
       setUser(user);
     });
   }, []);
-
   return (
     <div className="App">
       <AppContext.Provider
