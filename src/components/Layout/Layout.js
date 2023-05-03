@@ -4,7 +4,7 @@ import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
 import Auth from "../Auth/Auth";
 import Search from "../Search/Search";
-import "./Layout.css";
+import "./layout.css";
 
 export default function Layout(props) {
   return (

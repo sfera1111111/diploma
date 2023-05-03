@@ -1,5 +1,6 @@
 .Auth {
   padding: 12px 0 0 0;
+  
 }
 .Auth span {
   display: block;
@@ -10,12 +11,13 @@
   display: inline-block;
   border: none;
   outline: none;
-  padding: 12px 28px;
+  padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;
   text-align: center;  
   text-decoration: none;
   box-shadow: 0 9px #999;
+  white-space: nowrap;
 }
 .Auth button:hover {
   background-color: rgb(240, 76, 117);
