@@ -3,21 +3,31 @@ import Logo from "../Logo/Logo";
 import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
 import Auth from "../Auth/Auth";
-import Search from "../Search/Search";
+import NavToggle from "../NavToggle/NavToggle";
+import Drawer from "../Drawer/Drawer";
 import "./layout.css";
+import { useState } from "react";
 
 export default function Layout(props) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  function toggleDrawer() {
+    setDrawerOpen(!drawerOpen);
+  }
   return (
     <div className="layout">
        <header>
-        <div className="diplay">
-        <Logo />
-        <Nav  />
-        <CartLink className="cartlink" />
-        <Auth />
-        </div> 
-        <Search />  
-       </header>
+         <div className="header__body">
+         <Logo />
+        <Nav />
+        <NavToggle callback={toggleDrawer} />
+        <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        <div>
+          <CartLink />
+          <Auth />
+        </div>
+         </div>
+      </header>
        <aside>
         <CategoryList />      
        </aside>
