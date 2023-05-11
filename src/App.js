@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import {
+import { 
   onAuthChange,
   onCategoriesLoad,
   onOrdersLoad,
@@ -19,10 +19,8 @@ export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
-
   cart: {}, 
   setCart: () => {},
-
   user: null,
 });
 
@@ -69,7 +67,6 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
-
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

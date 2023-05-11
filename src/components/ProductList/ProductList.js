@@ -12,7 +12,7 @@ export default function ProductList({ category }) {
     .filter(product => product.category === category.id)
     .map(product => (
       <div key={product.id} className="Product">
-        <img src={product.picture} alt={product.name} />
+        <img src={product.picture} alt="Hello" />
         <NavLink to={'/products/' + product.slug}>
           {product.name}
         </NavLink>
