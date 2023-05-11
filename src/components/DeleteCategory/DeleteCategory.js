@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { deleteDoc, doc } from "firebase/firestore";
+import { db } from "../../firebase";
 
 export default function DeleteCatigory({category}) {
   const { user, products } = useContext(AppContext);
   if (!user || !user.isAdmin) {
       return null;
   }
- 
 
   function onDeleteClick() {
     const count = Object.values(products).filter(product => product.category === category.id).length;

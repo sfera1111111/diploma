@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { categoryCollection } from "../../firebase";
 import { addDoc } from "firebase/firestore";
 import { AppContext } from "../../App";
+import { categoryCollection } from "../../firebase";
 
 const AddCategory = () => {
   const { user } = useContext(AppContext);
