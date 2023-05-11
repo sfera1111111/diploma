@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, onSnapshot } from 'firebase/firestore'
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,6 +20,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 const auth = getAuth(app);
+export const storage = getStorage(app);
 
 export const categoryCollection = collection(db, 'categories');
 export const productsCollection = collection(db, 'products');
@@ -58,3 +60,11 @@ export const onOrdersLoad = (callback) =>
       }))
     )
   );
+
+  export const uploadProductPhoto = async (file) => {
+    const storageRef = ref(storage, `products/${file.name}`);
+    await uploadBytes(storageRef, file);
+  
+    const url = await getDownloadURL(storageRef);
+    return url;
+  };
