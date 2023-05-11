@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { deleteDoc, doc } from "firebase/firestore";
-import { categoryCollection, db } from "../../firebase";
 
 export default function DeleteCatigory({category}) {
   const { user, products } = useContext(AppContext);

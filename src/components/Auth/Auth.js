@@ -2,7 +2,6 @@ import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { useContext } from "react";
 import "./Auth.css";
-import { Link } from "react-router-dom";
 
 export default function Auth() {
   const { user } = useContext(AppContext);

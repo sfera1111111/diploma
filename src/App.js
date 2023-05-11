@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { 
+import {
   onAuthChange,
   onCategoriesLoad,
   onOrdersLoad,
@@ -14,7 +14,6 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
-
 export const AppContext = createContext({
   categories: [],
   products: [],
@@ -23,27 +22,21 @@ export const AppContext = createContext({
   setCart: () => {},
   user: null,
 });
-
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
-
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
-
   const [user, setUser] = useState(null);
-
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
-
   useEffect(() => {
     onCategoriesLoad(setCategories);
     onProductsLoad(setProducts);
     onOrdersLoad(setOrders);
-
     onAuthChange((user) => {
       if (user) {
         user.isAdmin = user.email === "samarbekjymakadurov@gmail.com";
@@ -54,8 +47,7 @@ function App() {
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user, orders }}
-      >
+        value={{ categories, products, cart, setCart, user, orders }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -74,5 +66,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
