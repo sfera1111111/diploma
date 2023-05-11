@@ -3,6 +3,7 @@ import { useMatch } from "react-router-dom";
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
 
+
 export default function Product() {
   const { params } = useMatch("/products/:slug");
   const { products } = useContext(AppContext);
