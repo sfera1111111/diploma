@@ -35,19 +35,21 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 }
 .header__body {
   display: flex;
   position: relative;
-  justify-content: space-between;
 }
 p {
   text-align: center;
 }
-header div {
+aside, main {
+  margin-top: 80px;
+}
+header .mg_l {
   display: flex;
-  right: 0;
+  margin-left: 450px;
 }
 .Layout .logo {
   max-width: 100px;
@@ -55,5 +57,14 @@ header div {
 @media (max-width: 550px) {
   .Layout header > .Nav {
     display: none;
+  }
+  aside, main {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1285px) {
+  header .mg_l {
+    display: flex;
+    margin-left: 0;
   }
 }

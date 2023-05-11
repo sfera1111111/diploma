@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  text-align: center;
+  border: solid rgb(200, 196, 196);
+  border-radius: 5%;
+  margin: 3px;
 }
 .ProductList {
   display: flex;
