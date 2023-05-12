@@ -2,7 +2,23 @@
   display: flex;
   align-items: center;
   padding: 15px;
+  border: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 .CartList .CartItem img {
-  width: 130px;
+  width: 100px;
+}
+.CartList input {
+  width: 30px;
+  margin-right: 10px;
+}
+.CartList a {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.CartList span {
+  padding-right: 10px;
 }

@@ -6,8 +6,8 @@
   display: block;
 }
 .Auth button {
-  background-color: rgb(221, 0, 0);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: inline-block;
   border: none;
   outline: none;
@@ -20,11 +20,12 @@
   white-space: nowrap;
 }
 .Auth button:hover {
-  background-color: rgb(240, 76, 117);
+  background-color: rgb(131, 131, 131);
+  color: rgb(255, 255, 255);
 }
 .Auth button:active {
-  background-color: rgb(240, 76, 117);
-  box-shadow: 0 5px #666;
+  background-color: rgb(222, 222, 222);
+  box-shadow: 0 5px #e6e6e6;
   transform: translateY(4px);
 }
 .Auth span h3 {

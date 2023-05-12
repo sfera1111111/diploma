@@ -23,13 +23,13 @@ export default function Layout(props) {
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="mg_l">
-          <CartLink />
-          <Auth />
+        <Auth />
+        <CartLink />
         </div>
          </div>
       </header>
        <aside>
-        <CategoryList />      
+        <CategoryList  className="CategoryList"/>      
        </aside>
        <main>{props.children}</main>
        <footer>FOOTER</footer>

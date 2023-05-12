@@ -18,16 +18,15 @@ export default function DeleteCatigory({category}) {
       return;
     }
 
-    if (!window.confirm ("Are you sure you want to delete")) {
+    if (!window.confirm ("Are you sure you want to delete this category?")) {
       
       return;
     }
 
     deleteDoc(doc(db, "categories", category.id));
   }
-
-
+  
   return (
-    <button className="DeleteCatigory" onClick={onDeleteClick}>-</button>
+    <button onClick={onDeleteClick}>-</button>
   );
 }

@@ -1,15 +1,16 @@
-.p {
-  padding: 0;
-}
-h1 {
+h1, h2, h3 {
   text-align: center;
 }
-h2 {
-  text-align: center;
+.CategoryList ul {
+  padding: 10px;
 }
 .CategoryList ul li {
   margin-top: 10px;
-  width: 150px;
-  height: 100%;
-  border: solid rgb(172, 177, 177);
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.CategoryList ul li a {
+  color: rgb(0, 0, 0);
 }
