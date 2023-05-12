@@ -61,11 +61,14 @@ header .mg_l {
   max-width: 100px;
 }
 @media (max-width: 550px) {
+  .header__body {
+    display: block;
+  }
   .Layout header > .Nav {
     display: none;
   }
   aside, main {
-    margin-top: 150px;
+    margin-top: 350px;
   }
 }
 @media (max-width: 1285px) {
