@@ -8,7 +8,7 @@ import Drawer from "../Drawer/Drawer";
 import  Search  from "../Search/Search";
 import "./layout.css";
 import { useState } from "react";
-import Wrapper from "../Wrapper/Wrapper";
+import { Wrapper } from "../Wrapper/Wrapper";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
