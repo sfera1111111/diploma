@@ -1,36 +1,43 @@
-import { useContext, useState } from "react";
 import { addDoc } from "firebase/firestore";
-import { AppContext } from "../../App";
+import { useContext, useState } from "react";
 import { categoryCollection } from "../../firebase";
+import { AppContext } from "../../App";
 
 const AddCategory = () => {
-  const { user } = useContext(AppContext);
-  const [category, setCategory] = useState("");
+   const { user } = useContext(AppContext);
+   const [category, setCategory] = useState("");
+   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  if (!user || !user.isAdmin) {
-    return null;
-  }
+   if (!user || !user.isAdmin) {
+     return null;
+   }
 
-  function onChangeCategory(event) {
-    setCategory(event.target.value);
-  }
+   function onChangeCategory(event) {
+     setCategory(event.target.value);
+   }
 
-  function onAddCategory() {
+   function onAddCategory() {
      const name = category.trim();
-     if (name.length < 5) {
-      alert(
-        "Please provido a category name with minimun leght of 5 character."
-      );
 
-      return;
+     if (name.length < 5) {
+       alert(
+         "Please provide a category name with minimum length of 5 characters."
+       );
+      
+       return;
      }
+
+     setIsSubmitting(true);
+
      addDoc(categoryCollection, {
-      name: name,
-      slug: name.replaceAll(" ", "-").toLocaleLowerCase(),
-      }).then(() => {
-        setCategory("");
-      });
-  }
+       name:name,
+       slug: name.replaceAll(" ", "-").toLocaleLowerCase(),
+     }).then(() => {
+       setCategory("");
+     }).finally(() => {
+       setIsSubmitting(false);
+     });
+   }
 
   return (
     <div className="AddCategory">
