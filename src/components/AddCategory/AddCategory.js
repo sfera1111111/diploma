@@ -41,15 +41,17 @@ const AddCategory = () => {
 
   return (
     <div className="AddCategory">
-      <input
-        size="15"
-        type="text"
-        value={category}
-        placeholder="Category name"
-        onChange={onChangeCategory}
-      />
-      <button onClick={onAddCategory}>+</button>
-    </div>
+  <input
+    size="15"
+    type="text"
+    value={category}
+    placeholder="Category name"
+    onChange={onChangeCategory}
+  />
+  <button onClick={onAddCategory} disabled={isSubmitting}>
+    +
+  </button>
+  </div>
   );
 };
 
