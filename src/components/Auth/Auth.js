@@ -12,11 +12,11 @@ export default function Auth() {
       {user ? (
         <span>
           Hello <Link to="/orders">{user.displayName}</Link>!
-          <button onClick={logOut}>Sign out</button>
+          <button className="button__Auth" onClick={logOut}>Sign out</button>
         </span>
       ) : (
         <span>
-          <button onClick={logIn}>Sign in</button>
+          <button className="button__Auth" onClick={logIn}>Sign in</button>
         </span>
       )}
      </div>

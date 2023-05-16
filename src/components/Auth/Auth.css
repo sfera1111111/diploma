@@ -5,7 +5,7 @@
 .Auth span {
   display: block;
 }
-.Auth button {
+.Auth .button__Auth {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   display: inline-block;
@@ -19,11 +19,11 @@
   box-shadow: 0 9px #999;
   white-space: nowrap;
 }
-.Auth button:hover {
+.Auth .button__Auth:hover {
   background-color: rgb(131, 131, 131);
   color: rgb(255, 255, 255);
 }
-.Auth button:active {
+.Auth .button__Auth:active {
   background-color: rgb(222, 222, 222);
   box-shadow: 0 5px #e6e6e6;
   transform: translateY(4px);
