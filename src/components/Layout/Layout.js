@@ -5,6 +5,7 @@ import CategoryList from "../CategoryList/CategoryList";
 import Auth from "../Auth/Auth";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
+import  Search  from "../Search/Search";
 import "./layout.css";
 import { useState } from "react";
 
@@ -18,11 +19,12 @@ export default function Layout(props) {
     <div className="layout">
        <header>
          <div className="header__body">
-         <Logo />
+        <Logo />
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="mg_l">
+        <Search />
         <Auth />
         <CartLink />
         </div>

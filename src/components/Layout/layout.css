@@ -51,29 +51,25 @@ p {
   text-align: center;
 }
 aside, main {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 header .mg_l {
-  display: block;
-  margin-left: 300px;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 21px;
 }
 .Layout .logo {
   max-width: 100px;
 }
 @media (max-width: 550px) {
-  .header__body {
-    display: block;
-  }
-  .Layout header > .Nav {
+  .layout header > .Nav {
     display: none;
   }
-  aside, main {
-    margin-top: 350px;
+  .header__body {
+    display: block;
+    text-align: center;
   }
-}
-@media (max-width: 1285px) {
-  header .mg_l {
-    display: flex;
-    margin-left: 0;
+  aside, main {
+    margin-top: 450px;
   }
 }
