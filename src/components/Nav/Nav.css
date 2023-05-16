@@ -12,11 +12,10 @@
 .Nav .NavItem a {
 color: rgb(0, 0, 0);
 }
-.dsp {
-  display: flex;
- }
-.Nav .dsp li {
+.Nav ul {
   padding-left: 10px;
+  padding-top: 40px;
+  padding-left: 150px;
   list-style-type: none;
 }
  a {
@@ -27,14 +26,24 @@ li {
 }
 .menu__item {
   font-size: 20px;
-  padding: 10px;
+  padding: 6px 10px 10px 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: solid black 1px;
+}
+.menu__item:hover {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+.menu__item:hover,
+.menu__item:focus {
+  border-color: currentColor;
+  background-color: rgba(215, 215, 215, 0.879);
 }
 @media (max-width: 550px) {
   .Nav ul {
     flex-direction: column;
     margin: 1rem 0;
-  }
-  .Nav {
-    display: none;
   }
 }
