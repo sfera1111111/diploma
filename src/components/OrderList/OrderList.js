@@ -21,17 +21,17 @@ export default function OrderList() {
       return (
         <div>
           {/* <img src={product.picture} alt={product.name} /> */}
-          {product.name}: {order.cart[productId]} X {product.price} som 
-        </div>
+          {product.name}: {order.cart[productId]} X {product.price} som = {order.cart[productId] * product.price} som
+          </div>
       );
     })
 
     return (
       <div className="Order">
-        <div>Name: {order.name}</div>
-        <div>Phone: {order.phone}</div>
-        <div>Address: {order.address}</div>
-        <div>Cart: {cartOutput}</div>
+        <div><strong>Name</strong>: {order.name}</div>
+        <div><strong>Phone</strong>: {order.phone}</div>
+        <div><strong>Address</strong>: {order.address}</div>
+        <div><strong>Cart</strong>: {cartOutput}</div>
       </div>
     );
   })

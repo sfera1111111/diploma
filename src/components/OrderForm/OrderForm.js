@@ -7,31 +7,31 @@ import { useNavigate } from "react-router-dom";
 
 export default function OrderForm() {
   const { cart, setCart, user } = useContext(AppContext);
-  const navigator = useNavigate
+  const navigate = useNavigate();
 
   if (Object.keys(cart).length === 0) {
     return "Your cart is empty.";
   }
+
   if (!user) {
-    return "Please login to creat an order"
+    return "Please login to create an order.";
   }
-  
+
   function onFormSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
 
     addDoc(ordersCollection, {
-      name: formData.get('name'),
-      phone: formData.get('phone'),
-      user: user.uil,
-      address: formData.get('address'),
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      user: user.uid,
+      address: formData.get("address"),
       cart: cart,
-    })
-    .then(doc => {
+    }).then((doc) => {
       setCart({});
-      navigator('/thank-you');
-    })
+      navigate("/thank-you");
+    });
   }
 
   return (
