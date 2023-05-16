@@ -1,5 +1,7 @@
-export default function() {
+export default function Contacts() {
   return (
-    <h1>Contacts</h1>
+    <div className="Contacts">
+      <h6 className="text-aling fs">+996504 070 731</h6>
+    </div>
   );
 }
