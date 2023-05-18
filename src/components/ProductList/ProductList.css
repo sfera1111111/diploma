@@ -11,11 +11,13 @@
   display: flex;
   width: 100%;
 }
-.ProductList .Product .basket {
-  width: 50px;
-} 
-.ProductList .Product .con {
-  margin: 5px;
-  width: 190px;
+.ProductList .Product img {
+  max-width: 190px;
   height: 190px;
-} 
+}
+.ProductList .Product a {
+  color: black;
+}
+.ProductList .Product a:hover {
+  color: rgb(83, 198, 187);
+}

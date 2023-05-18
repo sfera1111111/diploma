@@ -15,5 +15,5 @@ export default function Wrapper() {
       </Link>
       </div>
     </div>
-  )
+  );
 }

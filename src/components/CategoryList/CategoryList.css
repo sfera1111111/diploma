@@ -14,3 +14,7 @@ h1, h2, h3 {
 .CategoryList ul li a {
   color: rgb(0, 0, 0);
 }
+.CategoryList ul li:active {
+   background-color: rgb(83, 198, 187);
+   color: white;
+}

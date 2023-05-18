@@ -20,7 +20,7 @@
   white-space: nowrap;
 }
 .Auth .button__Auth:hover {
-  background-color: rgb(131, 131, 131);
+  background-color: rgb(83, 198, 187);
   color: rgb(255, 255, 255);
 }
 .Auth .button__Auth:active {
