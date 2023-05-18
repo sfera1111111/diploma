@@ -23,3 +23,10 @@
 .CartList span {
   padding-right: 10px;
 }
+@media (max-width: 550px) {
+  .CartList .CartItem {
+    display: block;
+    flex-direction: column;
+    max-width: 200px;
+  }
+}
