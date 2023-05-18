@@ -37,16 +37,16 @@ export default function OrderForm() {
   return (
     <form className="OrderForm" onSubmit={onFormSubmit}>
       <h2>Create an order</h2>
-      <label>
-        Name: <input type="text" name="name" required />
+      <label className="label_int">
+        Name: <input type="text" name="name" required className="int" />
       </label>
-      <label>
-        Phone: <input type="tel" name="phone" required />
+      <label className="int">
+        Phone: <input type="tel" name="phone" required className="int" />
       </label>
-      <label>
-        Address: <input type="text" name="address" required />
+      <label className="int">
+        Address: <input type="text" name="address" required className="int" />
       </label>
-      <button>Submit</button>
+      <button className="OrderForm_btn">Submit</button>
     </form>
   );
 }
