@@ -2,7 +2,8 @@
   width: 60%;
 }
 .Nav ul {
-  padding: 12px;
+  padding-top: 40px;
+  padding-left: 100px; 
   margin: 0;
   list-style-type: none;
   display: flex;
@@ -11,12 +12,6 @@
 }
 .Nav .NavItem a {
 color: rgb(0, 0, 0);
-}
-.Nav ul {
-  padding-left: 10px;
-  padding-top: 40px;
-  padding-left: 150px;
-  list-style-type: none;
 }
  a {
   text-decoration: none;
@@ -33,7 +28,6 @@ li {
   margin-left: 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border: solid black 1px;
 }
 .menu__item:hover {
   transform: translateY(1px);
@@ -49,4 +43,13 @@ li {
     flex-direction: column;
     margin: 1rem 0;
   }
+  .NavItem {
+    padding-top: 20px;
+    }
+    .NavLink {
+      border-bottom: solid rgb(83, 198, 187);
+    }
+    .ds {
+      display: block;
+    }
 }

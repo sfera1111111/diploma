@@ -46,9 +46,6 @@ header::before {
   display: flex;
   position: relative;
 }
-.flex {
-  display: flex;
-}
 p {
   font-size: 20px;
 }
@@ -72,23 +69,30 @@ header .mg_l {
 .Search {
   margin-right: 50px;
 }
-.Layout .logo {
+.layout .logo {
   max-width: 100px;
 }
 @media (max-width: 550px) {
-  .layout header > .Nav {
+  .layout .header__body > .Nav {
     display: none;
   }
+  .layout .mg_l > .Search {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+    width: 100%;
+  }
   .header__body {
-    display: block;
-    text-align: center;
-    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   aside, main {
-    margin-top: 450px;
+    margin-top: 100px;
   }
   header .mg_l {
-    display: flex;
+    display: block;
     margin-left: 20px;
     margin-top: 21px;
   }
