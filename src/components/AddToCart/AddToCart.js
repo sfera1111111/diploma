@@ -16,8 +16,8 @@ export default function AddToCart({ product }) {
   return (
     <div className="AddToCart">
       {cart[product.id] ? cart[product.id] : 0}
-      <button onClick={onAddToCartClick} className="btn">
-        <img src="https://e7.pngegg.com/pngimages/780/808/png-clipart-shopping-cart-logo-online-shopping-shopping-cart-angle-logo.png" alt="basket" className="basket" />
+      <button onClick={onAddToCartClick} className="OrderForm_btn">
+        Add to cart
         </button>
     </div>
   );
