@@ -24,6 +24,9 @@ color: rgb(0, 0, 0);
 li {
   list-style-type: none;
 }
+.ds {
+  display: flex;
+}
 .menu__item {
   font-size: 20px;
   padding: 6px 10px 10px 10px;
@@ -39,7 +42,7 @@ li {
 .menu__item:hover,
 .menu__item:focus {
   border-color: currentColor;
-  background-color: rgba(215, 215, 215, 0.879);
+  background-color: rgb(83, 198, 187);
 }
 @media (max-width: 550px) {
   .Nav ul {

@@ -31,10 +31,10 @@ export default function CartList() {
         min={1}
         onChange={(event) => onQuantityChange
         (product, +event.target.value)}
-        />
+         />
 
         <span>{cart[product.id] + product.price} som</span>
-        <button onClick={() => onItemRemove(product)}>Remove</button>
+        <button onClick={() => onItemRemove(product)} className="OrderForm_btn">Remove</button>
       </div>
     ));
 
