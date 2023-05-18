@@ -20,12 +20,10 @@ export default function Layout(props) {
     <div className="layout">
        <header>
          <div className="header__body">
-          <div className="flex">
         <Logo />
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        </div>
         <div className="mg_l">
         <Search />
         <Auth />
