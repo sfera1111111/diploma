@@ -11,7 +11,7 @@
 .CartList .CartItem img {
   width: 100px;
 }
-.CartList input {
+.CartList .input {
   width: 30px;
   margin-right: 10px;
 }

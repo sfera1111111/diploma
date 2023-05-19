@@ -31,6 +31,7 @@ export default function CartList() {
         min={1}
         onChange={(event) => onQuantityChange
         (product, +event.target.value)}
+        className="input"
          />
 
         <span>{cart[product.id] + product.price} som</span>
