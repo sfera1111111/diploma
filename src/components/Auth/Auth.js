@@ -11,7 +11,7 @@ export default function Auth() {
     <div className="Auth">
       {user ? (
         <span>
-         <Link to="/orders">Hello</Link>
+         <Link to="/orders">{user.displayName}</Link>
           <button className="button__Auth" onClick={logOut}>Sign out</button>
         </span>
       ) : (

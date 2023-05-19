@@ -24,6 +24,7 @@
 }
 .layout footer {
   grid-area: footer;
+  margin-top: 100px;
 }
 .layout .pholodilnik {
   max-width: 100px;
@@ -67,7 +68,8 @@ header .mg_l {
   margin-top: 21px;
 }
 .Search {
-  margin-right: 50px;
+  margin-right: 350px;
+  margin-top: 25px;
 }
 .layout .logo {
   max-width: 100px;
@@ -104,8 +106,5 @@ header .mg_l {
   header .mg_l {
     display: flex;
     margin-top: 20px;
-  }
-  .Search {
-    margin-right: 0px;
   }
 }
