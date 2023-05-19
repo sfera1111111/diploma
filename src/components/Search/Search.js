@@ -43,6 +43,7 @@ export default function Search () {
   }, []);
    return (<div className="Search" ref={searchRef}>
    <input
+    className="inp"
      type="text"
      placeholder="Search for a game"
      value={searchTerm}
