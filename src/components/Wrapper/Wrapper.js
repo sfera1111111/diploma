@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import './Wrapper.css';
-import Logo from '../Logo/Logo';
 
 function Wrapper() {
   const { categories } = useContext(AppContext);
