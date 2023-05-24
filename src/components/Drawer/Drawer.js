@@ -1,3 +1,4 @@
+import CartLink from "../CartLink/CartLink";
 import Nav from "../Nav/Nav";
 import Search from "../Search/Search";
 import "./Drawer.css"
@@ -11,6 +12,7 @@ function Drawer({ open, toggle }) {
       <div className="content">
         <Search />
         <Nav />
+        <CartLink />
       </div>
     </div>
   );
