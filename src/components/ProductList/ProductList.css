@@ -3,10 +3,13 @@
   flex-direction: column;
   max-width: 200px;
   text-align: center;
-  border: solid rgb(200, 196, 196);
+  border: solid rgb(211, 210, 210);
   border-radius: 5%;
   margin: 3px;
   padding: 12px;
+}
+.ProductList .Product:hover {
+  background-color: rgba(233, 233, 233, 0.602)
 }
 .ProductList {
   display: flex;
