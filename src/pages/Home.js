@@ -1,7 +1,7 @@
 export default function Home () {
   return (
     <div className="home">
-      <div>
+      <div className="">
             <iframe width="100%" height="534"
              src="https://www.youtube.com/embed/2TtLBQx2UKc" title="Сделано в России: обзор отечественной бытовой техники" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>

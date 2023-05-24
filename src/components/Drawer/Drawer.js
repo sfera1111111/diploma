@@ -1,6 +1,5 @@
 import CartLink from "../CartLink/CartLink";
 import Nav from "../Nav/Nav";
-import Search from "../Search/Search";
 import Language from "../language/language";
 import "./Drawer.css"
 
