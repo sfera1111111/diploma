@@ -34,7 +34,7 @@
   transform: translateX(0);
 }
 
-@media (min-width: 550px) {
+@media (min-width: 950px) {
   .Drawer .backdrop {
     display: none;
   }

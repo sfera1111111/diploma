@@ -37,7 +37,7 @@ li {
   border-color: currentColor;
   background-color: rgb(83, 198, 187);
 }
-@media (max-width: 550px) {
+@media (max-width: 950px) {
   .Nav ul {
     flex-direction: column;
     margin: 1rem 0;
