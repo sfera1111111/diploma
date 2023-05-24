@@ -26,8 +26,8 @@ export default function Layout(props) {
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="mg_l">
         <Search />
-        <Auth />
         <CartLink />
+        <Auth />
         </div>
          </div>
       </header>

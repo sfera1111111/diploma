@@ -12,10 +12,10 @@ export default function Nav() {
             <NavLink className="menu__item" to="/about">About</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink className="menu__item" to="/contacts">Contacts</NavLink>
+            <NavLink className="menu__item" to="/Contacts">Contact</NavLink>
           </li>
           <li className="NavItem">
-            <NavLink className="menu__item" to="/delivery">Delivery</NavLink>
+            <NavLink className="menu__item" to="/Delivery">Deliver</NavLink>
           </li>
         </ul>
        </nav>

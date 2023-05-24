@@ -45,7 +45,7 @@ export default function Search () {
    <input
     className="inp"
      type="text"
-     placeholder="Search for a game"
+     placeholder="Search"
      value={searchTerm}
      onChange={handleSearch}
    />

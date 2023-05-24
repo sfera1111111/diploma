@@ -11,7 +11,6 @@
 .layout header {
   grid-area: header;
   display: flex;
-  align-items: center;
   position: fixed;
 }
 .layout aside {
@@ -81,6 +80,9 @@ header .mg_l {
   .layout .mg_l > .Search {
     display: none;
   }
+  .layout .mg_l > .CartLink {
+    display: none;
+  }
   header {
     justify-content: space-between;
     width: 100%;
@@ -100,6 +102,35 @@ header .mg_l {
   }
   .Search {
     margin-right: 0px;
+    text-align: center;
+  }
+}
+@media (min-width: 550px) and (max-width: 922px) {
+  .header__body {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  aside, main {
+    margin-top: 270px;
+  }
+  .ds {
+    display: block;
+  }
+  .mg_l {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+  .Search {
+    margin-right: 0px;
+  }
+  .CartLink {
+    margin-left: 315px;
+  }
+  .ProductList {
+    display: block;
+    text-align: center;
   }
 }
 @media (max-width: 1200px) {

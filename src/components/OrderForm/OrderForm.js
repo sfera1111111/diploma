@@ -10,11 +10,17 @@ export default function OrderForm() {
   const navigate = useNavigate();
 
   if (Object.keys(cart).length === 0) {
-    return "Your cart is empty.";
+    return (
+      <h2>
+        Your cart is empty.
+      </h2>
+    );
   }
 
   if (!user) {
-    return "Please login to create an order.";
+    return (
+      <h1>Please login to create an order.</h1>
+    );
   }
 
   function onFormSubmit(event) {
