@@ -22,11 +22,11 @@ export default function Product() {
       <div style={{ display: "flex" }}>
       <img style={{ width: "250px", display: "flex" }}  src={product.picture} alt="Hello" />
       <p style={{ padding: "10px" }}>
-         <p><b>Characteristics and description</b></p>
+         <b>Characteristics and description</b>
         <br/>{product.description}</p>     
        </div>
-       <div style={{ display: "flex", padding: "10px" }}> 
-      <span style={{ fontSize: "24px", padding: "13px" }}>{product.price} som</span>
+       <div style={{ display: "flex", padding: "10px", justifyContent: "space-between" }}> 
+      <span style={{ fontSize: "24px", paddingTop: "73px" }}>{product.price} som</span>
       <AddToCart product={product} />
        </div>
     </div>
