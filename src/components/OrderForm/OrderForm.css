@@ -24,3 +24,7 @@
   background-color: rgb(83, 198, 187);
   color: white;
 }
+.OrderForm_btn:active {
+  font-size: 15px;
+  transition: 0.3s;
+}
