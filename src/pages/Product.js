@@ -19,9 +19,9 @@ export default function Product() {
       <div>
       <h1>{product.name}</h1>
       </div>
-      <div style={{ display: "flex" }}>
-      <img style={{ width: "250px", display: "flex" }}  src={product.picture} alt="Hello" />
-      <p style={{ padding: "10px" }}>
+      <div className="ds">
+      <img src={product.picture} alt="Hello" />
+      <p className="p">
          <b>Characteristics and description</b>
         <br/>{product.description}</p>     
        </div>
