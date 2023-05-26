@@ -37,11 +37,6 @@ header::before {
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
-.layout aside .CategoryList {
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(230, 230, 230, 0.886);
-}
 .header__body {
   display: flex;
   position: relative;
@@ -55,6 +50,9 @@ p {
 .fs {
   font-size: 20px;
 }
+.ds {
+  display: flex;
+}
 .img__Home {
   text-align: center;
 }
@@ -65,10 +63,6 @@ header .mg_l {
   display: flex;
   margin-left: 100px;
   margin-top: 21px;
-}
-.Search {
-  margin-right: 350px;
-  margin-top: 25px;
 }
 .layout .logo {
   max-width: 100px;
