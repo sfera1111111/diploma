@@ -47,7 +47,7 @@ export default function OrderForm() {
         Name: <input type="text" name="name" required className="int" />
       </label>
       <label className="int">
-        Phone: <input type="tel" name="phone" required className="int" />
+        Phone: <input type="text" name="phone" required className="int" />
       </label>
       <label className="int">
         Address: <input type="text" name="address" required className="int" />
