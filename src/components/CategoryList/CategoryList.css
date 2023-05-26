@@ -18,3 +18,8 @@ h1, h2, h3 {
    background-color: rgb(83, 198, 187);
    color: white;
 }
+.CategoryList {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 0.886);
+}
